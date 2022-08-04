@@ -1,3 +1,3 @@
 export default {
-  describe: 'change this field,page can aadateasdf',
+  describe: 'change this field,page can update.',
 };

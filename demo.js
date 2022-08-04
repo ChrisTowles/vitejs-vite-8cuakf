@@ -1,16 +1,20 @@
 // Modify JSON to triggering hmr
-import json_raw from './tst_raw.json?raw'; // makes it hot reloadable but not json.
+import json_none from './tst_none.json'; // makes it hot reloadable.
 
-import json_other from './tst_other.json?init'; // makes it hot reloadable but still json.
+import json_inline from './tst_inline.json?inline'; // makes it hot reloadable.
+
+import json_init from './tst_init.json?init'; // makes it hot reloadable.
 
 // Modify JS can trigger
 import js from './tst.js';
 
 export function setupApp(element) {
   element.innerHTML = `
-    json json_raw:${JSON.stringify(json_raw)}<br />
+    json json_none:${JSON.stringify(json_none)}<br />
     <br />
-    json json_other:${JSON.stringify(json_other)}<br />
+    json json_inline:${JSON.stringify(json_inline)}<br />
+    <br />
+    json json_init:${JSON.stringify(json_init)}<br />
     <br />
     js file:${JSON.stringify(js)}
   `;
