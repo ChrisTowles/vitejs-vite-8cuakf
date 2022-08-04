@@ -8,6 +8,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vite": "2.9.4"
+    "vite": "^3.0.4"
   }
 }
